@@ -35,4 +35,4 @@ module.exports = {
   }
 };
 
-//# sourceMappingURL=markdown-html-viewer.js.map
+//# sourceMappingURL=index.js.map

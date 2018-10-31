@@ -2,12 +2,12 @@
   "name": "markdown-html-viewer",
   "version": "1.0.0",
   "description": "markdown loader & convert to html",
-  "main": "dist/markdown-html-viewer.js",
+  "main": "dist/index.min.js",
   "scripts": {
     "clean": "rimraf ./dist/*",
     "lint": "eslint src/** --fix",
-    "babel:main": "babel src/markdown-html-viewer.js --out-file dist/markdown-html-viewer.js --source-maps",
-    "babel:min": "babel src/markdown-html-viewer.js --out-file dist/markdown-html-viewer.min.js --presets babili",
+    "babel:main": "babel src/index.js --out-file dist/index.js --source-maps",
+    "babel:min": "babel src/index.js --out-file dist/index.min.js --presets babili",
     "transpile": "npm-run-all -s clean lint babel:*",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint-watch": "onchange -i -k src/** -- npm run lint"
