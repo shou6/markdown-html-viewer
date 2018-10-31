@@ -1,0 +1,67 @@
+{
+  "name": "markdown-html-viewer",
+  "version": "1.0.0",
+  "description": "markdown loader & convert to html",
+  "main": "dist/markdown-html-viewer.js",
+  "scripts": {
+    "clean": "rimraf ./dist/*",
+    "lint": "eslint src/** --fix",
+    "babel:main": "babel src/markdown-html-viewer.js --out-file dist/markdown-html-viewer.js --source-maps",
+    "babel:min": "babel src/markdown-html-viewer.js --out-file dist/markdown-html-viewer.min.js --presets babili",
+    "transpile": "npm-run-all -s clean lint babel:*",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint-watch": "onchange -i -k src/** -- npm run lint"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shou6/markdown-html-viewer.git"
+  },
+  "keywords": [
+    "md",
+    "markdown",
+    "editor",
+    "upload",
+    "download"
+  ],
+  "author": "shota.tanaka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shou6/markdown-html-viewer/issues"
+  },
+  "homepage": "https://github.com/shou6/markdown-html-viewer#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "showdown": "^1.8.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-es6-promise": "^1.1.1",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-babili": "^0.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "child-process-promise": "^2.2.1",
+    "cross-env": "^5.1.6",
+    "es6-promise": "^4.2.5",
+    "eslint": "^5.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "lodash": "^4.17.11",
+    "npm-run-all": "^4.1.3",
+    "onchange": "^5.0.2",
+    "prettier": "^1.12.1"
+  }
+}

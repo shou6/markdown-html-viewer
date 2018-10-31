@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "8.11.1"
+      }
+    }]
+  ],
+  "plugins": ["transform-async-to-generator", "lodash", "syntax-async-functions", "es6-promise"],
+  "ignore": [
+    "node_modules"
+  ]
+}
