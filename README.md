@@ -4,9 +4,11 @@ Get `markdown(.md)` from path / url , Display as `HTML / TEXT`
 
 ## Installation
 
-To install, use `npm`
+To install, use `npm` or `yarn`
 
-    npm i markdown-html-viewer
+    npm install markdown-html-viewer
+
+    yarn add markdown-html-viewer
 
 ## Usage
 
